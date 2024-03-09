@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("Best-Website-Background-Images28.jpg");
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.box-menu {
+    background-color: darkcyan;
+    text-align: center; 
+}
+
+.box-menu ul {
+    display: inline-flex; 
+    list-style: none;
+    color: #fff;
+}
+
+.box-menu ul li {
+    position: relative; /* Added position relative for submenu positioning */
+    width: 120px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.box-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.active,
+.box-menu ul li:hover {
+    background-color: #2bab0d;
+    border-radius: 5px;
+}
+
+.box-submenu {
+    display: none;
+    position: absolute; /* Added position absolute for submenu positioning */
+    background: #002FD2;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.box-menu ul li:hover .box-submenu {
+    display: block;
+}
+
+.box-menu ul li:hover .box-submenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
